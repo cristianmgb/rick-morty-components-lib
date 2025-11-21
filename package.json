@@ -1,6 +1,19 @@
 {
   "name": "rick-morty-components-lib",
   "version": "1.0.0",
+  "description": "A React components library based on Rick and Morty theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cristianmgb/rick-morty-components-lib"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "material-ui",
+    "rick-and-morty"
+  ],
+  "author": "Cristian González",
+  "license": "MIT",
   "type": "module",
   "main": "dist/rick-morty-components-lib.cjs.js",
   "module": "dist/rick-morty-components-lib.es.js",
