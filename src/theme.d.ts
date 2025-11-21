@@ -26,4 +26,18 @@ declare module '@mui/material/styles' {
     '800'?: string;
     '900'?: string;
   }
+  interface Palette {
+    custom: {
+      whiteAlpha30: string;
+      blackAlpha75: string;
+      whiteAlpha60: string;
+    };
+  }
+  interface PaletteOptions {
+    custom?: {
+      whiteAlpha30?: string;
+      blackAlpha75?: string;
+      whiteAlpha60?: string;
+    };
+  }
 }
