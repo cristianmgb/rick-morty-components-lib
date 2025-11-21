@@ -38,6 +38,7 @@ export const CardComponent = ({
     >
       <Box className={`card-image-container-${variant}`}>
         <Button
+          role="favorite-btn"
           sx={{
             position: 'absolute',
             top: 0,
