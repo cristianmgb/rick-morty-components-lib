@@ -5,6 +5,7 @@ import type { CardVariant } from './components/card/card.interface';
 import { Button } from './components/button/Button';
 import theme from './theme/theme';
 import { InputSearch } from './components/input-search/InputSearch';
+import { SegmentedButton } from './components/segmented-button/SegmentedButton';
 
 const cardVariants: CardVariant[] = [
   'vertical-small',
@@ -46,6 +47,14 @@ function App() {
       <InputSearch
         maxWidth={'600px'}
         onChange={(value) => console.log('Search input value:', value)}
+      />
+      <SegmentedButton
+        tabs={[
+          { label: 'Option 1', value: 'option1' },
+          { label: 'Option 2', value: 'option2' },
+          { label: 'Option 3', value: 'option3' },
+        ]}
+        onChange={(value) => console.log('SegmentedButton value:', value)}
       />
     </Box>
   );
