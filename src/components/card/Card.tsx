@@ -10,6 +10,8 @@ import {
 } from '@mui/material';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import type { CardProps } from './card.interface';
+import { ChipComponent } from '../chip/Chip';
+import { Favorite } from '../favorite/Favorite';
 
 export const CardComponent = ({
   id,
@@ -18,6 +20,7 @@ export const CardComponent = ({
   location,
   gender,
   image,
+  status,
   variant = 'vertical-normal',
   onFavoriteChange,
 }: CardProps) => {
@@ -49,7 +52,20 @@ export const CardComponent = ({
             setIsFavorite(newValue);
             onFavoriteChange?.(id, newValue);
           }}
-        ></Button>
+        >
+          <Favorite
+            color={
+              isFavorite
+                ? theme.palette.primary.light
+                : theme.palette.background.paper
+            }
+            colorStar={
+              isFavorite
+                ? theme.palette.primary.dark
+                : theme.palette.secondary['400']!
+            }
+          />
+        </Button>
         <img
           src={image}
           alt={name}
@@ -78,6 +94,7 @@ export const CardComponent = ({
             >
               {name}
             </Typography>
+            {!isMobile && <ChipComponent status={status} />}
           </Box>
           <Typography
             fontFamily="Montserrat"
