@@ -40,6 +40,11 @@ const theme = createTheme({
       primary: neutrals[800],
       secondary: neutrals[600],
     },
+    custom: {
+      whiteAlpha30: 'rgba(255, 255, 255, 0.3)',
+      blackAlpha75: 'rgba(0, 0, 0, 0.75)',
+      whiteAlpha60: 'rgba(255, 255, 255, 0.6)',
+    },
   },
   typography: {
     fontFamily: "'Poppins', 'Roboto', sans-serif",

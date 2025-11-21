@@ -2,6 +2,9 @@ import './App.css';
 import { Tarjeta } from './';
 import { Box } from '@mui/material';
 import type { CardVariant } from './components/card/card.interface';
+import { Button } from './components/button/Button';
+import theme from './theme/theme';
+import { InputSearch } from './components/input-search/InputSearch';
 
 const cardVariants: CardVariant[] = [
   'vertical-small',
@@ -34,6 +37,16 @@ function App() {
           variant={variant}
         />
       ))}
+      <Button
+        text="Click Me"
+        backgroundColor={theme.palette.primary['500']!}
+        color={theme.palette.primary['900']!}
+        onClick={() => alert('Clicked!')}
+      />
+      <InputSearch
+        maxWidth={'600px'}
+        onChange={(value) => console.log('Search input value:', value)}
+      />
     </Box>
   );
 }
