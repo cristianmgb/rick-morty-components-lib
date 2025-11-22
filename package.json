@@ -1,6 +1,6 @@
 {
   "name": "rick-morty-components-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React components library based on Rick and Morty theme",
   "repository": {
     "type": "git",
