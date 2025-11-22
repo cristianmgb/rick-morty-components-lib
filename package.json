@@ -23,7 +23,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/rick-morty-components-lib.es.js",
       "require": "./dist/rick-morty-components-lib.cjs.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist"
